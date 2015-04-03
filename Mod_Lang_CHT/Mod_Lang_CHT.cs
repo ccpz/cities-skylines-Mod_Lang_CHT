@@ -55,7 +55,7 @@ namespace Mod_Lang_CHT
                     Stream st = asm.GetManifestResourceStream(asm.GetName().Name+"."+locale_name+".locale");
 
 #if (DEBUG)
-                        DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("File size: {0}", st.Length));
+                    DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("File size: {0}", st.Length));
 #endif
                     String dst_path = "";
 #if (DEBUG)
@@ -95,18 +95,18 @@ namespace Mod_Lang_CHT
                     for (int i = 0; i < locales.Length; i++)
                     {
 #if (DEBUG)
-                            DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Locale index: {0}, ID: {1}", i, locales[i]));
+                        DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Locale index: {0}, ID: {1}", i, locales[i]));
 #endif
                         if (locales[i].Equals(locale_name))
                         {
 #if (DEBUG)
-                                DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Find locale {0} at index: {1}", locale_name, i));
+                            DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Find locale {0} at index: {1}", locale_name, i));
 #endif
                             ColossalFramework.Globalization.LocaleManager.instance.LoadLocaleByIndex(i);
                         }
                     }
 #if (DEBUG)
-                        DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Post Setting Language: {0}", ColossalFramework.Globalization.LocaleManager.defaultLanguage));
+                    DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Post Setting Language: {0}", ColossalFramework.Globalization.LocaleManager.defaultLanguage));
 #endif
                 }
                 catch (Exception e)
