@@ -25,7 +25,7 @@ TODO: Write history
 
 ## Credits
 
-### Bahamuut
+### Bahamut http://www.gamer.com.tw/
 * boy091702(雪人。橘痕ㄦ)
 * vivian200103(vivian＊﹋)
 * i5918591(捷克斯)
@@ -42,7 +42,7 @@ TODO: Write history
 * jamessl2(食夢)
 * tzouandy2818(裸奔熊NakedBear)
 
-### PTT
+### PTT http://ptt.cc
 * ccpz
 * HwangTW
 * Dravex
