@@ -96,7 +96,6 @@ namespace Mod_Lang_CHT
 
 #if (DEBUG)
                     DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("File write to: {0}", Path.GetFullPath(dst.Name)));
-                    DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Current Language: {0}", ColossalFramework.Globalization.LocaleManager.defaultLanguage));
 #endif
                     ColossalFramework.Globalization.LocaleManager.ForceReload();
 
@@ -114,12 +113,17 @@ namespace Mod_Lang_CHT
                                 DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Find locale {0} at index: {1}", locale_name, i));
 #endif
                                 ColossalFramework.Globalization.LocaleManager.instance.LoadLocaleByIndex(i);
+
+                                //thanks to: https://github.com/Mesoptier/SkylineToolkit/commit/d33f0bae67662df25bdf8ee2170d95a6999c3721
+                                ColossalFramework.SavedString lang_setting = new ColossalFramework.SavedString("localeID", "gameSettings");
+#if (DEBUG)
+                                DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Current Language Setting: {0}", lang_setting.value));
+#endif
+                                lang_setting.value = locale_name;
+                                ColossalFramework.GameSettings.SaveAll();                                
                                 break;
                             }
                         }
-#if (DEBUG)
-                        DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Post Setting Language: {0}", ColossalFramework.Globalization.LocaleManager.defaultLanguage));
-#endif
                     }
                 }
                 catch (Exception e)
