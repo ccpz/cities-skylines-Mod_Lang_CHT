@@ -114,6 +114,7 @@ namespace Mod_Lang_CHT
                                 DebugOutputPanel.AddMessage(PluginManager.MessageType.Message, String.Format("Find locale {0} at index: {1}", locale_name, i));
 #endif
                                 ColossalFramework.Globalization.LocaleManager.instance.LoadLocaleByIndex(i);
+                                break;
                             }
                         }
 #if (DEBUG)
@@ -131,7 +132,7 @@ namespace Mod_Lang_CHT
 
         public string Description
         {
-            get { return "Here is where I define my mod"; }
+            get { return ""; }
         }
     }
 }
