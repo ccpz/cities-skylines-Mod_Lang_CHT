@@ -41,6 +41,7 @@ TODO: Write history
 * opendanny(饅頭Takumi)
 * jamessl2(食夢)
 * tzouandy2818(裸奔熊NakedBear)
+* twakps(ζητιανεύοντας)
 
 ### PTT http://ptt.cc
 * ccpz
@@ -54,6 +55,7 @@ TODO: Write history
 * clear919
 * HuangJS
 * boy091702
+* tmjwang
 
 ## License
 
