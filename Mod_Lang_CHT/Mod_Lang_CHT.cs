@@ -71,7 +71,7 @@ namespace Mod_Lang_CHT
                             dst_path = "Cities.app/Contents/Resources/Files/Locale/" + locale_name + ".locale";
                             break;
                         case Platform.Linux:
-                            //TODO: find locale path under linux
+                            dst_path = "Files/Locale" + locale_name + ".locale";
                             break;
                     }
 
