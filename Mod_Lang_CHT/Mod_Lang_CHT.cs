@@ -83,6 +83,8 @@ namespace Mod_Lang_CHT
                         first_install = false;
                     }
 
+                    //File.OpenWrite won't truncate file, so delete it first
+                    File.Delete(dst_path);
                     FileStream dst = File.OpenWrite(dst_path);
 
                     byte[] buffer = new byte[8 * 1024];
