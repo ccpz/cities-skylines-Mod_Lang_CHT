@@ -55,7 +55,6 @@ TODO: Write history
 * clear919
 * HuangJS
 * boy091702
-* tmjwang
 
 ### Github
 * mzch
